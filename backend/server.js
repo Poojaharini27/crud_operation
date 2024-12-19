@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
 // Create a new student
 app.post("/create", (req, res) => {
     const { name, email } = req.body;
-
+    console.log(name,email)
     if (!name || !email) {
         return res.status(400).json({ message: "Bad request: 'name' and 'email' are required" });
     }

@@ -9,7 +9,7 @@ function CreateStudent() {
     function handleSubmit(event){
         console.log(name,email);
         event.preventDefault();
-        axios.post('https://crud-operation-s1mz.onrender.com',{name,email})
+        axios.post('https://crud-operation-s1mz.onrender.com/create',{name,email})
         .then(res=>{
             console.log("in create");
             console.log(res);
