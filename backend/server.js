@@ -5,8 +5,6 @@ const mysql = require("mysql");
 const app = express();
 app.use(express.json());
 app.use(cors());
-
-// Database connection with direct credentials (not recommended for production)
 const db = mysql.createPool({
     host: "bnzv1gcpy44mbyzhobd8-mysql.services.clever-cloud.com",
     user: "ul44cavoshszkrxi",

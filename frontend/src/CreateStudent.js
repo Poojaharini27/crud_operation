@@ -9,7 +9,7 @@ function CreateStudent() {
     function handleSubmit(event){
         console.log(name,email);
         event.preventDefault();
-        axios.post('http://localhost:3030/create',{name,email})
+        axios.post('https://crud-operation-s1mz.onrender.com',{name,email})
         .then(res=>{
             console.log("in create");
             console.log(res);

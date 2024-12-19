@@ -10,7 +10,7 @@ function UpdateStudent() {
     function handlesubmit(event){
         console.log(name,email);
         event.preventDefault();
-        axios.put('http://localhost:3030/update/'+id,{name,email})
+        axios.put('https://crud-operation-s1mz.onrender.com/update/'+id,{name,email})
         
         .then(res=>{
             //console.log('hello');

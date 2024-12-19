@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Student() {
     const[student,setStudent]=useState([]);
     useEffect(()=>{
-        axios.get('http://localhost:3030/')
+        axios.get('https://crud-operation-s1mz.onrender.com/')
         .then(res => {
             console.log('API response:', res.data);
             // Check if the response data is an array
@@ -20,7 +20,7 @@ function Student() {
     const handleDelete= async (id) => {
         console.log("called")
         try{
-            await axios.delete(`http://localhost:3030/student/${id}`);
+            await axios.delete(`https://crud-operation-s1mz.onrender.com/student/${id}`);
             window.location.reload();
         }
         catch(err){
